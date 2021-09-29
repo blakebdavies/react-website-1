@@ -37,7 +37,7 @@ export default function Blog() {
       </div>
       <div className="blog-posts">
         {data?.posts?.map((item) => (
-          <div key={item.slug}>
+          <div key={item.slug} className="blog-title">
             <Link to={`/work/${item.slug}`}>
               <a href={`work/${item.slug}`}>{item.title}</a>
             </Link>

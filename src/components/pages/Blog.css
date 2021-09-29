@@ -9,10 +9,11 @@
   flex-flow: column;
   justify-content: center;
   align-items: flex-start;
-  font-size: 1.25rem;
   margin: 3rem;
 }
-
+.blog-title {
+  font-size: 1.7rem;
+}
 .post-description {
-  font-size: 1em;
+  font-size: 12px;
 }

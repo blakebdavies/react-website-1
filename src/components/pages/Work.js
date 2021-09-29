@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Work.css";
-//import "../../App.css";
 import { useQuery, gql } from "@apollo/client";
 
 const query = gql`
