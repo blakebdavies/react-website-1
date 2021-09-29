@@ -23,10 +23,9 @@ const query = gql`
 
 export default function Work() {
   const { data, loading, error } = useQuery(query);
-  console.log(data);
 
   if (loading) return "Loading...";
-  if (error) return <pre>{error.message}</pre>;
+  if (error) return "Error, please try something new";
 
   return (
     <>
@@ -37,9 +36,21 @@ export default function Work() {
       <div className="work-projects">
         {data?.portfolios?.map((item) => (
           <div key={item.slug}>
+            {" "}
+            Campaign:{" "}
             <Link to={`/work/${item.slug}`}>
               <a href={`work/${item.slug}`}>{item.title}</a>
             </Link>
+            <div className="project-image">
+              <img
+                src={item.coverImage.url}
+                alt={`${item.title} campaign`}
+                className="project-img"
+              />
+            </div>
+            <p className="project-description">
+              {item.date}: {item.description}
+            </p>
           </div>
         ))}
       </div>

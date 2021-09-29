@@ -1,18 +1,10 @@
-h1 {
-  font-size: 3rem;
-}
-
-p {
-  font-size: 1.5rem;
-}
 .header {
   height: 30vh;
   align-items: center;
   justify-content: center;
   margin: 3rem;
 }
-
-.work-projects {
+.blog-posts {
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -21,8 +13,6 @@ p {
   margin: 3rem;
 }
 
-.project-img {
-  margin-top: 20px;
-  height: auto;
-  width: 500px;
+.post-description {
+  font-size: 1em;
 }

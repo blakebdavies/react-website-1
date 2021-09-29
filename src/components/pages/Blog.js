@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-//import "../../App.css";
+import "./Blog.css";
 import { useQuery, gql } from "@apollo/client";
 
 const query = gql`
@@ -25,7 +25,6 @@ const query = gql`
 
 export default function Blog() {
   const { data, loading, error } = useQuery(query);
-  console.log(data);
 
   if (loading) return "Loading...";
   if (error) return <pre>{error.message}</pre>;
@@ -36,12 +35,15 @@ export default function Blog() {
         <h1 className="blog">Our Blog</h1>
         <p>Check out our team's industry knowledge</p>
       </div>
-      <div className="work-projects">
+      <div className="blog-posts">
         {data?.posts?.map((item) => (
           <div key={item.slug}>
             <Link to={`/work/${item.slug}`}>
               <a href={`work/${item.slug}`}>{item.title}</a>
             </Link>
+            <div className="post-description">
+              <p>{item.description}</p>
+            </div>
           </div>
         ))}
       </div>
