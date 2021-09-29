@@ -5,10 +5,10 @@
   font-family: "PT Sans", sans-serif;
 }
 
-.home,
-.services,
+.home
+/*.work,
 .blog,
-.sign-up {
+.contact*/ {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -16,8 +16,8 @@
   font-size: 3rem;
 }
 
-.services {
-  /* background-image: url(); */
+/*.work {
+  background-image: url();
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 }
 
 .blog {
-  /* background-image: url(); */
+   background-image: url(); 
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -34,11 +34,12 @@
   font-size: 100px;
 }
 
-.sign-up {
-  /* background-image: url(); */
+.contact {
+  background-image: url(); 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
 }
+*/

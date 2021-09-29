@@ -29,7 +29,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            MKTG <i class="far fa-lightbulb" />
+            MKTG <i className="far fa-lightbulb" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -41,12 +41,8 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/services"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Services
+              <Link to="/work" className="nav-links" onClick={closeMobileMenu}>
+                Work
               </Link>
             </li>
             <li className="nav-item">
@@ -56,15 +52,15 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/sign-up"
+                to="/contact"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                Contact
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+          {button && <Button buttonStyle="btn--outline">Contact</Button>}
         </div>
       </nav>
     </>
