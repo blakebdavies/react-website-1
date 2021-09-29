@@ -5,3 +5,17 @@
   justify-content: center;
   align-items: center;
 }
+.contact-details {
+  margin: 2em;
+}
+.email a {
+  text-decoration: none;
+}
+.email a:hover {
+  color: #242424;
+}
+
+.social-icons {
+  margin: 2em;
+  padding: 20px;
+}
