@@ -35,7 +35,6 @@ export default function Work() {
       <div className="projects__container">
         <div className="projects__wrapper">
           <ul className="projects__items">
-            {/* <div className="work-projects"> */}
             {data?.portfolios?.map((item) => (
               <li className="project-item" key={item.slug}>
                 {" "}
@@ -59,7 +58,6 @@ export default function Work() {
                 </p>
               </li>
             ))}
-            {/* </div> */}
           </ul>
         </div>
       </div>
