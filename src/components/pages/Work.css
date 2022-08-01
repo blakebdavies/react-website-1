@@ -69,20 +69,6 @@ p {
   animation-duration: 2s;
 }
 
-.project__item__pic-wrap::after {
-  content: attr(data-category);
-  position: absolute;
-  bottom: 0;
-  margin-left: 10px;
-  padding: 6px 8px;
-  max-width: calc((100%) - 60px);
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
-  background-color: #38a3a5;
-  box-sizing: border-box;
-}
-
 .project__item__img {
   position: absolute;
   top: 0;
