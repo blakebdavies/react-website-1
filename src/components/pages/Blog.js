@@ -30,23 +30,29 @@ export default function Blog() {
   if (error) return <pre>{error.message}</pre>;
 
   return (
-    <>
+    <div className="container">
       <div className="header">
         <h1 className="blog">Our Blog</h1>
         <p>Check out our team's industry knowledge</p>
       </div>
-      <div className="blog-posts">
-        {data?.posts?.map((item) => (
-          <div key={item.slug} className="blog-title">
-            <Link to={`/work/${item.slug}`}>
-              <a href={`work/${item.slug}`}>{item.title}</a>
-            </Link>
-            <div className="post-description">
-              <p>{item.description}</p>
-            </div>
-          </div>
-        ))}
+      <div className="blogs__container">
+        <div className="blogs__wrapper">
+          <ul className="blog__posts">
+            {data?.posts?.map((item) => (
+              <div className="blog-post" key={item.slug}>
+                <Link className="blog-post-title" to={`/work/${item.slug}`}>
+                  <a className="blog-post-link" href={`work/${item.slug}`}>
+                    {item.title}
+                  </a>
+                </Link>
+                <div className="blog-post-description">
+                  <p>{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </ul>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
