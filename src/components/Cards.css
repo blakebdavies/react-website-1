@@ -1,8 +1,3 @@
-.cards {
-  padding: 4rem;
-  background: #fff;
-}
-
 h1,
 p {
   text-align: center;
@@ -13,6 +8,12 @@ p {
   font-size: 20px;
   padding: 18px;
 }
+
+.cards {
+  padding: 4rem;
+  background: #fff;
+}
+
 .cards__container {
   display: flex;
   flex-flow: column;
